@@ -88,6 +88,7 @@ func formatReport(metrics map[string]interface{}) string {
 		ret += fmt.Sprintf("\tMemory Size: %.0f MB", val)
 	}
 
+
 	if val, ok := metrics["maxMemoryUsedMB"]; ok {
 		ret += fmt.Sprintf("\tMax Memory Used: %.0f MB", val)
 	}
